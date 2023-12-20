@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Barlow Semi Condensed";
+            box-sizing: border-box;
+            flex-wrap: nowrap;
+        }
+
+        .head {
+            background-color: rgb(247, 243, 243);
+            height: 20%;
+            display: flex;
+            padding: 2px;
+            flex-direction: row;
+            /* border: 2px solid black; */
+            /* width: 100%; */
+        }
+
+        .logo {
+            color: rgba(128, 128, 128, 0.678);
+            font-weight: bolder;
+            padding-left: 25px;
+            padding-top: 5px;
+            /* border: 2px solid black; */
+            font-size: 55px;
+            /* padding: 10px; */
+        }
+
+        .nv {
+            margin: auto;
+            /* border: 2px solid black; */
+            display: flex;
+            gap: 50px;
+            flex-direction: row;
+            padding: 10px;
+            padding-left: 55px;
+            font-size: 35px;
+
+        }
+
+        .home {
+            color: rgb(68, 189, 236);
+            font-weight: 800;
+
+        }
+
+        .nlink {
+            /* border: 2px solid black; */
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon {
+            font-size: 40px;
+            color: grey;
+            display: flex;
+            gap: 20px;
+            margin: auto;
+            margin: 5px;
+            padding: 5px;
+            flex-direction: row;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+
+        .icon1 {
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 50px;
+
+        }
+
+        .sec {
+            display: flex;
+            gap: 28px;
+            width: 100%;
+            height: 410px;
+            margin-top: 2px;
+            margin-bottom: 5px;
+
+        }
+
+        .heading {
+            margin-top: 20px;
+            padding-left: 45px;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding-left: 45px;
+            width: 95%px;
+            margin-top: 25px;
+        }
+
+        .circle1 {
+            /* margin-left: 50px; */
+            height: 45px;
+            width: 45px;
+            background-color: yellow;
+            border-radius: 50%;
+            display: inline-block;
+            /* margin-right: 15px; */
+            animation-name: updown;
+            animation-duration: 1s;
+            /* animation-direction: normal; */
+            /* animation-delay: 1s; */
+            animation-iteration-count: infinite;
+            transition: all;
+
+        }
+
+        .circle2 {
+            /* margin-right: 15px; */
+            height: 55px;
+            width: 55px;
+            background-color: orangered;
+            border-radius: 50%;
+            display: inline-block;
+            /* margin-bottom: 20px; */
+            animation-name: updown;
+            animation-duration: 1s;
+            /* animation-direction: normal; */
+            animation-delay: .8s;
+            animation-iteration-count: infinite;
+            transition: all;
+
+        }
+
+        .circle3 {
+            height: 75px;
+            width: 75px;
+            background-color: cornflowerblue;
+            border-radius: 50%;
+            display: inline-block;
+            /* flex-direction: ; */
+            animation-name: updown;
+            animation-duration: 1s;
+            /* animation-direction: ; */
+            animation-delay: .5s;
+            animation-iteration-count: infinite;
+            /* animation-timing-function: ease-in-out; */
+            transition: all;
+        }
+
+        @keyframes updown {
+
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                
+                transform: translateY(-20px);
+                
+            }
+            100%{
+                transform: translateY(0px);
+
+            }
+           
+        }
+        
+        .text {
+            display: inline-flex;
+            flex-direction: column;
+            margin: 20px;
+            /* border: 2px solid black; */
+            height: 400px;
+            width: 600px;
+        }
+
+        .element {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            margin: 85px 0px 0px 50px;
+        }
+
+        .img {
+            display: flex;
+            background-image: url(/CleanWebpage/robert-lukeman-_RBcxo9AU-U-unsplash.jpg);
+            background-position: center;
+            background-size: cover;
+            /* border: 2px solid black; */
+            height: 95%;
+            width: 900px;
+            margin-right: 15px;
+            margin-top: 12px;
+            padding-left: 20px;
+        }
+
+        .foot {
+            background-color: rgba(10, 10, 10, 0.911);
+            display: flex;
+            height: 25%;
+            gap: 20px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            /* padding-right: 5px; */
+            align-items: center;
+            justify-content: center;
+            color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <div class="logo">logo</div>
+        <nav class="nv">
+            <div class="home nlink">Home</div>
+            <div class="nlink">About</div>
+            <div class="nlink">Contact</div>
+        </nav>
+        <div class="icon">
+            <a class="icon1 icon"><i class='bx bxl-facebook'></i></a>
+            <a class="icon2 icon"><i class='bx bxl-twitter'></i></a>
+            <a class="icon3 icon"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </header>
+    <section class="sec">
+        <div class="text">
+            <br><br><br>
+            <div class="heading">
+                <h1>Header</h1>
+                <h1>Footer</h1>
+            </div>
+            <br><br><br><br><br><br><br><br>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid tempore, perferendis nam eius ex,
+                natus,
+                tempora expedita quia labore odit optio similo Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="element">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+            </div>
+        </div>
+        <div class="img"></div>
+    </section>
+    <footer class="foot">
+        <div class="block1">
+            <p>
+            <h3>Block header</h3>
+            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita nesciunt
+            libero vitae, odit eveniet! consectetur, adipisicing eo cumque eaque! </p>
+        </div>
+        <div class="block2">
+            <p>
+            <h3>Block header</h3>
+            Lorem ipsum dolor sit amet consectetur, adipisici architecto cumque eaque! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quae, repudiandae? </p>
+        </div>
+        <div class="block3">
+            <p>
+            <h3>Block header</h3>
+            Lorem ipsum dolor sit amet consectetur, aut ea inventore, omnis eos nam eveniet architecto cumque eaque!
+            Lorem ipsum dolor sit amet. </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
